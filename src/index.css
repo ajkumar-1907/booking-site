@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 355 30% 98%;
+    --foreground: 345 15% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 345 15% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 345 15% 15%;
+
+    --primary: 340 75% 65%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 350 20% 95%;
+    --secondary-foreground: 345 15% 25%;
+
+    --muted: 350 15% 92%;
+    --muted-foreground: 345 10% 45%;
+
+    --accent: 320 60% 85%;
+    --accent-foreground: 345 15% 25%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 350 20% 88%;
+    --input: 350 20% 88%;
+    --ring: 340 75% 65%;
+
+    --radius: 0.75rem;
+
+    /* Nail salon specific tokens */
+    --nail-rose: 340 75% 65%;
+    --nail-rose-light: 340 60% 85%;
+    --nail-rose-dark: 340 85% 45%;
+    --nail-cream: 355 30% 98%;
+    --nail-nude: 350 20% 95%;
+    --nail-gold: 45 90% 75%;
+    --nail-shimmer: 320 40% 90%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--nail-rose)), hsl(var(--nail-rose-light)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--nail-rose)) 0%, hsl(var(--nail-shimmer)) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)) 0%, hsl(var(--nail-nude)) 100%);
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -2px hsl(var(--nail-rose) / 0.1);
+    --shadow-elegant: 0 10px 40px -10px hsl(var(--nail-rose) / 0.2);
+    --shadow-glow: 0 0 30px hsl(var(--nail-rose) / 0.3);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 345 20% 8%;
+    --foreground: 355 15% 90%;
+
+    --card: 345 15% 12%;
+    --card-foreground: 355 15% 90%;
+
+    --popover: 345 15% 12%;
+    --popover-foreground: 355 15% 90%;
+
+    --primary: 340 75% 65%;
+    --primary-foreground: 345 20% 8%;
+
+    --secondary: 345 10% 18%;
+    --secondary-foreground: 355 15% 90%;
+
+    --muted: 345 10% 18%;
+    --muted-foreground: 345 5% 60%;
+
+    --accent: 320 40% 25%;
+    --accent-foreground: 355 15% 90%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 345 10% 22%;
+    --input: 345 10% 22%;
+    --ring: 340 75% 65%;
+    
+    /* Dark mode nail salon tokens */
+    --nail-rose: 340 75% 65%;
+    --nail-rose-light: 340 50% 50%;
+    --nail-rose-dark: 340 85% 35%;
+    --nail-cream: 345 20% 8%;
+    --nail-nude: 345 15% 12%;
+    --nail-gold: 45 70% 60%;
+    --nail-shimmer: 320 30% 20%;
+    
+    /* Dark gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--nail-rose)), hsl(var(--nail-rose-dark)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--nail-rose-dark)) 0%, hsl(var(--nail-shimmer)) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)) 0%, hsl(var(--nail-nude)) 100%);
+    
+    /* Dark shadows */
+    --shadow-soft: 0 4px 20px -2px hsl(var(--nail-rose) / 0.2);
+    --shadow-elegant: 0 10px 40px -10px hsl(var(--nail-rose) / 0.3);
+    --shadow-glow: 0 0 30px hsl(var(--nail-rose) / 0.4);
+    
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
