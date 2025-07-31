@@ -27,7 +27,7 @@ const stats = [
 
 const AboutSection = () => {
   return (
-    <section className="py-20 px-6 bg-background">
+    <section id="about" className="py-20 px-6 bg-background">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           

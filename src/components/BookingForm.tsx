@@ -72,10 +72,10 @@ const BookingForm = () => {
 
     try {
       const result = await emailjs.send(
-        "service_3kz6kxp", // ✅ Replace with your actual service ID
-        "template_xs5irtk", // ✅ Fix typo: remove "Y" from "Ytemplate"
+        "service_3kz6kxp", //actual service ID
+        "template_xs5irtk",
         templateParams,
-        "k6zHpS-y4hwb9LzTp" // ✅ Your public key
+        "k6zHpS-y4hwb9LzTp" // public key
       );
 
       console.log("Email sent:", result.text);
