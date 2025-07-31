@@ -1,15 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Playwrite+AU+QLD:wght@100..400&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
 
 html {
   scroll-behavior: smooth;
 }
 
+.playwrite {
+  font-family: "Playwrite AU QLD", serif;
+}
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+.michroma {
+  font-family: "Michroma", sans-serif;
+}
+
 
 @layer base {
   :root {

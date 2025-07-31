@@ -19,9 +19,9 @@ const HeroSection = () => {
       </div>
       
       <div className="relative z-10 text-center px-6 max-w-4xl animate-fade-in">
-        <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 tracking-tight">
+        <h1 className="text-5xl md:text-7xl font-bold font-playwrite text-foreground mb-6 tracking-tight">
           Beautiful Nails
-          <span className="block bg-gradient-primary bg-clip-text text-transparent">
+          <span className="block bg-gradient-primary font-michroma bg-clip-text text-transparent">
             Made Perfect
           </span>
         </h1>

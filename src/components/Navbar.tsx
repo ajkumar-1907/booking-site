@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
 
       {/* Sidebar (overlay) */}
       <div
-        className={`fixed top-0 right-0 h-full w-64 bg-rose-100/70 shadow-lg z-40 transform transition-transform duration-300 rounded-tl-3xl rounded-bl-3xl ${
+        className={`fixed top-0 right-0 h-full w-64 bg-rose-100/70 text-gray-900 shadow-lg z-40 transform transition-transform duration-300 rounded-tl-3xl rounded-bl-3xl ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
