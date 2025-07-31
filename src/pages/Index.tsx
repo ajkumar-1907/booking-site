@@ -4,11 +4,13 @@ import AboutSection from "@/components/AboutSection";
 import BookingForm from "@/components/BookingForm";
 import ContactSection from "@/components/ContactSection";
 import Navbar from "@/components/Navbar";
+import Preloader from "@/components/Preloader";
 
 const Index = () => {
   return (
     
     <div className="min-h-screen">
+      <Preloader />
       <Navbar />
       <HeroSection />
       <ServicesSection />

@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
         {/* Close Button */}
         <div className="flex justify-end p-4">
           <button
-            className="p-2 bg-rose-400 rounded-md"
+            className="p-2 bg-rose-400 rounded-md text-white"
             onClick={() => setIsOpen(false)}
           >
             <X className="w-6 h-6" />
