@@ -12,7 +12,7 @@ const HeroSection = () => {
       
       {/* Floating elements */}
       <div className="absolute top-20 left-10 animate-bounce">
-        <Sparkles className="w-8 h-8 text-nail-gold opacity-70" />
+        <Sparkles className="w-20 h-9 text-nail-gold opacity-70" />
       </div>
       <div className="absolute bottom-32 right-16 animate-bounce delay-1000">
         <Sparkles className="w-6 h-6 text-nail-rose-light opacity-60" />

@@ -1,6 +1,8 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Palette, Gem, Crown, Sparkles, Star, Heart } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button"; 
 
 const services = [
   {
@@ -126,6 +128,27 @@ const ServicesSection = () => {
             ))}
           </div>
         </div>
+
+        {/* ⬇️ Shop Button */}
+        <div className="text-center mt-12">
+          <Link to="/shop">
+            <Button
+              className="
+                bg-gradient-to-r from-primary to-accent 
+                text-white font-semibold 
+                px-8 py-4 
+                rounded-xl 
+                shadow-soft 
+                hover:shadow-elegant 
+                transform hover:-translate-y-1 
+                transition-all duration-300
+                "
+              >
+            Visit Shop
+          </Button>
+          </Link>
+        </div>
+
       </div>
     </section>
   );
